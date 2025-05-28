@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+         <div style="width: 60%;height: 70px;background-color: bisque;border-radius: 30%;border: 2px solid black;"></div>
+        <div class="formBox">
+            <h1>Library form</h1>
+            <p style="text-align: center;font-size: larger;font-family:Arial, Helvetica, sans-serif;">Help us improve your local library!</p>
+
+            <form action="" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: larger;padding: 12px;">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required >
+                <br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+                <label for="age">Age :</label>
+                <input id="age" name="age" placeholder="Enter your age" required ></input>
+                <br>
+                
+                <label for="visit">How often do you visit the library</label><br><br>
+                <select name="always" id="always" >
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Rarely">Rarely</option>
+                    
+                </select><br>
+             
+                <p>When you visit, are you usually able to find what you are looking for?</p>
+                 <div class="radio-group">
+                     <label><input type="radio" name="find" value="always" required>Always</label>
+                <label><input type="radio" name="find" value="Sometimes" required>Sometimes</label>
+                <label><input type="radio" name="find" value="Rarely" required>Rarely</label>
+                <label><input type="radio" name="find" value="Never" required>Never</label>
+                 </div>
+
+                 <p>Do you usually find the books and other materials that you are looking for in the library?</p>
+                 <div class="radio-group">
+                     <label><input type="radio" name="materials" value="always" required>Always</label>
+                <label><input type="radio" name="materials" value="Sometimes" required>Sometimes</label>
+                <label><input type="radio" name="materials" value="Rarely" required>Rarely</label>
+                <label><input type="radio" name="materials" value="Never" required>Never</label>
+                 </div>
+                   
+                 <p>Please check all of the resons you visit the library.(Check all that apply)</p>
+                 <div class="radio-group">
+                     <label><input type="checkbox" name="reasons" value="" required>to check out / return books</label>
+                <label><input type="checkbox" name="reasons" value="" required>to use the computers</label>
+                <label><input type="checkbox" name="reasons" value="" required>to get a book recommendation</label>
+                <label><input type="checkbox" name="reasons" value="" required>to do research / find information</label>
+                <label><input type="checkbox" name="reasons" value="" required>to take a class</label>
+                 </div>
+
+                  <p>Anything you would like to see improve?</p>
+            <label for="feedback">
+                <input type="textarea" id="feedback" name="feedback" placeholder="Enter your feedback here" style="width: 60%; height: 60px; margin-left: 100px; ">
+            </label>
+
+            <button type="submit" style="padding: 20px 30px ;background-color: greenyellow; margin-left: 180px;border-radius: 6px;" onclick="response()">Submit</button>
+            </div>
+
+           
+        
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        response = () => {
+            alert("Thank you for your feedback! We appreciate your time and effort in helping us improve our library services.");
+        }
+    </script>
+</body>
+</html>
